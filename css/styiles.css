@@ -224,7 +224,7 @@ background-image: url(../images/svg/envelope.svg);
 
   background-color: var(--accent-color);
   transform: scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current:hover::after {
@@ -270,6 +270,8 @@ background-image: url(../images/svg/envelope.svg);
   padding: 10px 32px;
   margin-right: auto;
   margin-left: auto;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -281,7 +283,7 @@ background-image: url(../images/svg/envelope.svg);
   text-decoration: none;
   color: var(--primary-text-color);
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link.current {
@@ -440,7 +442,9 @@ background-image: url(../images/svg/envelope.svg);
   /* font-size: 16px; */
   line-height: 1.62;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-menu-item:hover,
 .button-menu-item:focus {
@@ -535,6 +539,8 @@ background-image: url(../images/svg/envelope.svg);
   border-radius: 50px;
 
   /* outline: 3px solid rgb(13, 247, 25); */
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comand-soc-link:hover,
@@ -611,6 +617,8 @@ background-image: url(../images/svg/envelope.svg);
 .project-link {
   display: block;
   text-decoration: none;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-link:hover,
@@ -687,6 +695,10 @@ background-image: url(../images/svg/envelope.svg);
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+
+  color: var(--accent-color);
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .custom-icon {
@@ -699,7 +711,9 @@ background-image: url(../images/svg/envelope.svg);
 
 .custom-link:hover .custom-icon,
 .custom-link:focus .custom-icon {
-  fill: var(--accent-color);
+  fill: currentColor;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .custom-link:hover,
@@ -739,7 +753,7 @@ footer {
 
   margin-top: 20px;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-footer-mailtel {
@@ -776,7 +790,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.1);
 
   /* outline: 2px solid #40e018; */
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footersoc-link:hover,
