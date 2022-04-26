@@ -389,6 +389,9 @@ background-image: url(../images/svg/envelope.svg);
   justify-content: center;
 }
 
+.work-link{
+  display: block;
+}
 /* <!--------------------Наша команда-----------------------------> */
 
 .item.commad-card {
@@ -519,6 +522,8 @@ background-image: url(../images/svg/envelope.svg);
 .comand-socseti {
   display: flex;
   fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   /* outline: 4px solid turquoise; */
 }
@@ -706,6 +711,8 @@ background-image: url(../images/svg/envelope.svg);
 
   fill: #afb1b8;
 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   /* outline: 1px solid #110c0c; */
 }
 
@@ -713,7 +720,6 @@ background-image: url(../images/svg/envelope.svg);
 .custom-link:focus .custom-icon {
   fill: currentColor;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .custom-link:hover,
